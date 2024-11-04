@@ -1,4 +1,4 @@
-
+package Uppgift1;
 
 public class User {
     String name;
@@ -7,7 +7,7 @@ public class User {
     boolean active;
     UserClass userClass;
 
-    public User(String name, int iD, String eMail, boolean active, UserClass userClass){
+    public User(String name, int iD, String eMail, boolean active, UserClass userClass) {
         this.name = name;
         this.iD = iD;
         this.eMail = eMail;
@@ -61,10 +61,4 @@ public class User {
                 + userClass + "]";
     }
 
-    
-    
-
-
-
 }
-

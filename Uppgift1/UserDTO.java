@@ -1,3 +1,4 @@
+package Uppgift1;
 
 public class UserDTO {
 
@@ -40,7 +41,4 @@ public class UserDTO {
         return "UserDTO [iD=" + iD + ", name=" + name + ", email=" + email + "]";
     }
 
-    
-
 }
-

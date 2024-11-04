@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SimpleArrayList {
     private String[] elements; // Array för att lagra elementen i listan som en String-array
-    private int size = 0;      // Håller reda på antalet element i listan
+    private int size = 0; // Håller reda på antalet element i listan
     private static final int DEFAULT_CAPACITY = 10; // Standardkapacitet för listan
 
     // Konstruktor som initialiserar ArrayList med standardkapacitet
@@ -14,7 +14,7 @@ public class SimpleArrayList {
 
     // Lägger till ett element i listan
     public void add(String element) {
-        ensureCapacity();           // Kontrollerar om det finns tillräckligt med plats för ett nytt element
+        ensureCapacity(); // Kontrollerar om det finns tillräckligt med plats för ett nytt element
         elements[size++] = element; // Lägger till elementet och ökar storleken på listan
     }
 
@@ -45,10 +45,11 @@ public class SimpleArrayList {
     // Tömmer hela listan genom att sätta alla element till null
     public void clear() {
         Arrays.fill(elements, 0, size, null); // Sätter alla aktuella element till null
-        size = 0;                             // Återställer storleken på listan till 0
+        size = 0; // Återställer storleken på listan till 0
     }
 
-    // Kontrollerar att det finns tillräckligt med kapacitet, annars fördubblar kapaciteten
+    // Kontrollerar att det finns tillräckligt med kapacitet, annars fördubblar
+    // kapaciteten
     private void ensureCapacity() {
         // Om storleken är lika med längden på arrayen, öka kapaciteten
         if (size == elements.length) {
@@ -59,21 +60,21 @@ public class SimpleArrayList {
     // Huvudmetod för att testa funktionerna i ArrayList
     public static void main(String[] args) {
         SimpleArrayList list = new SimpleArrayList();
-        
+
         // Lägger till några frukter i listan
         list.add("Mango");
         list.add("Jordgubbe");
         list.add("Ananas");
 
         // Hämtar och skriver ut ett element från listan
-        System.out.println("Frukt på index 1: " + list.get(1)); 
+        System.out.println("Frukt på index 1: " + list.get(1));
 
         // Raderar ett element från listan
         list.remove(1);
-        System.out.println("Frukt efter borttagning på index 1: " + list.get(1)); 
+        System.out.println("Frukt efter borttagning på index 1: " + list.get(1));
 
         // Raderar hela listan
         list.clear();
-        System.out.println("Antal element efter tömning: " + list.size); 
+        System.out.println("Antal element efter tömning: " + list.size);
     }
 }

@@ -1,3 +1,4 @@
+package Uppgift1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,4 @@ public class UserService {
         return new UserDTO(user.getiD(), user.getName(), user.geteMail());
     }
 
-    
 }
-

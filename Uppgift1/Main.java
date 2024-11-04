@@ -1,6 +1,11 @@
+package Uppgift1;
+
+/* Gruppuppgift Avancerad Javaprogrammering 
+ * Deltagande i Studiegrupp 3:
+ * Lisa Fälth, Bo Shui & Sandra Bäckgren.
+*/
 
 import java.util.List;
-
 
 public class Main {
 

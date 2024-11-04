@@ -17,7 +17,7 @@ public class Main {
             Method addMethod = clazz.getDeclaredMethod("add", int.class);
             addMethod.setAccessible(true);
 
-            int result = (int) addMethod.invoke(calculatorObject, 4);
+            int result = (int) addMethod.invoke(calculatorObject, 6);
             System.out.println(result);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
